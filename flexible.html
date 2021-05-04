@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cajas Flexibles</title>
+	<style>
+		#padre{
+			width: 725px;
+			background: gray;
+			height: 300px;
+			display: flex;
+		}
+		#padre > div{
+			
+
+		}
+		#hijo-1{
+			background-color: pink;
+	        flex-grow:1; 	
+		}
+		#hijo-2{
+			background-color: yellow;
+			flex-grow:1; 
+		}
+		#hijo-3{
+			background-color: pink;
+	        flex-grow:1; 	
+		}
+		#hijo-4{
+			background-color: yellow;
+			flex-grow:1; 
+		}
+
+	</style>
+</head>
+<body>
+	<section id="padre">
+		<div id="hijo-1">Caja 1</div>
+		<div id="hijo-2">Caja 2</div>
+		<div id="hijo-3">Caja 3</div>
+		<div id="hijo-4">Caja 4</div>
+		
+		
+	</section>
+	
+</body>
+</html>
+
+<!-- 
+Flex-grow: Factor de crecimiento.
+Flex-Shrink: Factor de decrecimiento.
+Flex-basis: Tamaño base
+
+325 * 1 / 4 = 81.25 + 100 = 181.25
+
+Espacio disponible * Factor de crecimiento / cantidad total de factores = resultado + Tamaño Base.
+-->
